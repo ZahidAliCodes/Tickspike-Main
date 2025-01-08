@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickspike</title>
+   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="financial.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="overview.css">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="header-container">
+            <div class="header-main">
+                <a href="index.html" class="nav-a-menu">
+                    <img src="logo.svg" alt="logo">
+                </a>
+                <div class="res-toggle-btn">
+                    <img src="light-search.svg" class="form-btn" alt="light">
+                    <div class="menu-toggle">☰</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="drop-menu">
+                            <a href="index.html" class="nav-a-menu">Home</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <h1>Performance Analysis</h1>
+                                    <ol>
+                                        <li><a href="#portfolio analysis">Portfolio Analysis</a></li>
+                                        <li><a href="#Portfolio Performance">Portfolio Performance</a></li>
+                                        <li><a href="#Stock Comparison">Stock Comparison</a></li>
+                                        <li><a href="#Sharpe Ratio">Sharpe Ratio</a></li>
+                                        <li><a href="#Martin Ratio">Martin Ratio</a></li>
+                                        <li><a href="#Treynor Ratio">Treynor Ratio</a></li>
+                                        <li><a href="#Sortino Ratio">Sortino Ratio</a></li>
+                                        <li><a href="#Omega Ratio">Omega Ratio</a></li>
+                                        <li><a href="#Calmar Ratio">Calmar Ratio</a></li>
+                                        <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Risk Analysis</h1>
+                                    <ol>
+                                        <li><a href="#Drawdowns">Drawdowns</a></li>
+                                        <li><a href="#Expected Shortfall">Expected Shortfall</a></li>
+                                        <li><a href="#Ulcer Index">Ulcer Index</a></li>
+                                        <li><a href="#Value at Risk">Value at Risk</a></li>
+                                        <li><a href="#Close-to-Close Volatility">Close-to-Close Volatility</a></li>
+                                        <li><a href="#Parkinson Volatility">Parkinson Volatility</a></li>
+                                        <li><a href="#Garman Klass Volatility">Garman Klass Volatility</a></li>
+                                        <li><a href="#Rogers-Satchell Volatility">Rogers-Satchell Volatility</a></li>
+                                        <li><a href="#Yang Zhang Volatility">Yang Zhang Volatility</a></li>
+                                        <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Optimization</h1>
+                                    <ol>
+                                        <li><a href="#Asset Correlations">Asset Correlations</a></li>
+                                        <li><a href="#Portfolio Optimization">Portfolio Optimization</a></li>
+                                        <li><a href="#Risk Parity Optimization">Risk Parity Optimization</a></li>
+                                        <li><a href="#Hierarchical Risk Parity">Hierarchical Risk Parity (HRP) Optimization</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Factor Model</h1>
+                                    <ol>
+                                        <li><a href="#Alpha">Alpha</a></li>
+                                        <li><a href="#Beta">Beta</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-menu active-nav-menu">
+                            <a href="stock.html" class="nav-a-menu">Stocks</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <ol>
+                                        <li><a href="#portfolio analysis">Lazy Portfolios</a></li>
+                                        <li><a href="#Portfolio Performance">User Portfolios</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li  class="drop-menu">
+                            <a href="#etfs" class="nav-a-menu">ETFs</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <ol>
+                                        <li><a href="#ETF Screener">ETF Screener</a></li>
+                                        <li><a href="#Portfolio Performance">Fund Screener</a></li>
+                                        <li><a href="#Stock Screener">Stock Screener</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#funds" class="nav-a-menu" >Funds</a>
+                        </li>
+                        <li> 
+                            <a href="#insider-action" class="nav-a-menu">Insider action</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-a-menu">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="form-container">
+                    <form>
+                        <img src="search.svg" alt="search">
+                        <input type="text" placeholder="Search Stocks, Bonds, ETFs...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-bg">
+        <div class="container">
+            <div class="main-head">
+                <div class="header1">
+                    <ul>
+                        <span>
+                            <li>Tickspike <span>|</span></li>
+                        </span>
+                        <li>stocks <span>|</span></li>
+                        <li>Agilent Technologies Inc</li>
+                    </ul>
+                </div>
+                <div class="header2">
+                    <div class="header2-img">
+                        <img src="tabler_clock.svg" alt="">
+                    </div>
+                    <div class="header2-content">
+                        <p>Last updated Nov 14,2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="adds"></div>
+    </div>
+    <div class="container">
+        <div class="main-banner">
+            <div class="banner-content">
+                <h1>Agilent Technologies Inc</h1>
+                <h2><span>NYSE </span>- AALY</h2>
+                <h3>+ 6.16%</h3>
+            </div>
+            <div class="banner-para">
+                <p>Explore the detailed financial performance of Agilent Technologies Inc  over the recent quarters and years. This section includes key metrics  such as total revenue, net income, operating income, and other critical financial indicators that provide insights into the company's financial health and operational  efficiency.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chat-list">
+            <ul>
+                <li class="active-section">
+                    <a href="overview.html">
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="financial.html">Financials</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="#">Market cap</a>
+                </li>
+                <li>
+                    <a href="#">Historical Price</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="main-over">
+            <div class="over-heading">
+                <h1>Agilent Technologies Inc</h1>
+                <h2>AALY</h2>
+            </div>
+            <div class="over-image">
+                <img src="Screen Shot 2024-11-15 at 8.45.24 AM 1.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-over">
+            <div class="over-heading">
+                <h1>Seasonals</h1>
+                <h2>Displays a symbol’s price movements over previous years to identify recurring
+                    <br>
+                    trends</h2>
+            </div>
+            <div class="over-image">
+                <img src="Screen Shot 2024-11-15 at 9.24.11 AM 1-2.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-over-about">
+            <div class="over-heading over-heading2">
+                <h1><span>About</span> Agilent Technologies Inc</h1>
+                <p>Agilent supports scientists in 110 countries in cutting-edge life  science research; patient diagnostics; and testing required to  ensure  the safety of water, food and pharmaceuticals their advanced instruments,  software, consumables, and services enable their customers to produce the  most accurate and reliable results as well as optimal scientific,  economic, and operational outcomes.</p>
+            </div>
+            <div class="over-listing">
+                <div class="list-1">
+                    <ul>
+                        <li><span>Market Capitalization:</span> $39.27B</li>
+                        <li><span>EBITDA:</span> $1.56B</li>
+                        <li><span>P/E Ratio:</span> 28.42</li>
+                        <li><span>PEG Ratio:</span> 2.94</li>
+                        <li><span>Target Price:</span> $148.81</li>
+                        <li><span>Book Value:</span> $20.53</li>
+                        <li><span>Diluted EPS (TTM):</span> $4.81</li>
+                        <li><span>Quarterly Earnings Growth (YoY):</span> 1.5690</li>
+                    </ul>
+                </div>
+                <div class="list-1">
+                    <ul>
+                        <li><span>Dividend Share:</span> $0.93</li>
+                        <li><span>Dividend Yield:</span> 0.0069</li>
+                        <li><span>Earnings Share:</span> $4.81</li>
+                        <li><span>EPS Estimate (Current Year):</span> $5.24</li>
+                        <li><span>EPS Estimate (Next Year):</span> $5.65</li>
+                        <li><span>EPS Estimate (Next Quarter):</span>  $0.00</li>
+                        <li><span>Gross Profit (TTM):</span> $3.46B</li>
+                        <li><span>Revenue Per Share (TTM):</span> $22.269</li>
+                    </ul>
+                </div>
+                <div class="list-1">
+                    <ul>
+                        <li><span>EPS Estimate (Current Quarter):</span> $1.26</li>
+                        <li><span>Most Recent Quarter:</span> 02024-07-31</li>
+                        <li><span>Profit Margin:</span> 0.2175</li>
+                        <li><span>Operating Margin (TTM):</span> 0.2497</li>
+                        <li><span>Return on Assets (TTM):</span> 0.0758</li>
+                        <li><span>Return on Equity (TTM):</span> 0.2466</li>
+                        <li><span>Revenue (TTM):</span> $6496999936.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="over-graph">
+            <img src="Graph section 3.svg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="over-add"></div>
+    </div>
+    <div class="container">
+        <div class="main-over-card">
+            <div class="over-flex">
+                <div class="over-card-heading">
+                    <h1>Agilent Technologies Inc <span>News</span></h1>
+                </div>
+                <div class="over-btn">
+                    <button>
+                        <p>Read More</p> 
+                        <img src="Vector-4.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="news-card-grid">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="Group 29.svg" alt="">
+                        <p>10 hours ago   |  <span>MT Newsnation</span></p>
+                    </div>
+                    <div class="news-para">
+                        <p>Renaissance Technologies Shifts Gears: Microsoft In, 
+                            <br>
+                            Tesla Out, Palantir On 
+                            <br>
+                            Top [CORRECTED]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container chose-container">
+        <div class="why-choose why-choose2">
+            <div class="why-choose-left">
+                <h2>Why Choose Us?</h2>
+                <h1>Leading the way in <span>free investment 
+                    analytics</span> and insights.</h1>
+                <ul>
+                    <li>
+                        <img src="word-icon.svg" alt="word">
+                        Cutting-Edge Technology
+                    </li>
+                    <li>
+                        <img src="word-icon.svg" alt="word">
+                        Unparalleled Accuracy
+                    </li>
+                    <li>
+                        <img src="word-icon.svg" alt="word">
+                        Personalized Insight
+                    </li>
+                </ul>
+            </div>
+            <div class="why-choose-right">
+                <img src="why-choose.svg" alt="user">
+                <img class="adobe" src="adobe.svg" alt="adobe">
+                <img class="amazon" src="amazon.svg" alt="amazon">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="ft-container">
+           <div class="footer-main">
+                <div class="footer-social">
+                    <img src="logo.svg" alt="logo">
+                    <p>Let us unleash our creativity and expertise to create designs that deliver extraordinary results.</p>
+                    <div>
+                        <a href="#skype"><img src="skype.svg" alt="skype"></a>
+                        <a href="#whatsapp"><img src="whatsapp.svg" alt="whatsapp"></a>
+                        <a href="#ft"><img src="ft.svg" alt="ft"></a>
+                        <a href="#twiter"><img src="twiter.svg" alt="twiter"></a>
+                        <a href="#yt"><img src="yt.svg" alt="yt"></a>
+                        <a href="#telegram"><img src="telegram.svg" alt="telegram"></a>
+                        <a href="#insta"><img src="insta.svg" alt="insta"></a>
+                    </div>
+                    <p class="copy-right">© 2023 Tickspike. All rights reserved.</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <h1>Get in Touch</h1>
+                        <li><p>954, Prosacco Pine, 947 Weber Wells Suite 755, Iowa, West Dallin, Post Code : 95284-5922</p></li>
+                        <li>contact@tickspike.com</li>
+                        <li>+1 215-501-4450</li>
+                    </ul>
+                    <ul>
+                        <h1>Learn More</h1>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="terms-of-use">Terms of Use</a></li>
+                        <li><a href="risk-disclosure">Risk Disclosure</a></li>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Quick Links</h1>
+                        <li><a href="#indices">Indices</a></li>
+                        <li><a href="#nifty-50">NIFTY 50</a></li>
+                        <li><a href="#nifty-bank">NIFTY Bank</a></li>
+                        <li><a href="#gift-nifty">GIFT NIFTY</a></li>
+                    </ul>
+                </div>
+           </div> 
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

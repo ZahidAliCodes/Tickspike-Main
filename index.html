@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickspike</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="dark-bg">
+    <div class="white-lines">
+        <header>
+            <div class="header-container">
+                <div class="header-main">
+                    <a href="#" class="nav-a-menu">
+                        <img src="logo.svg" alt="logo">
+                    </a>
+                    <div class="res-toggle-btn">
+                        <img src="light-search.svg" class="form-btn" alt="light">
+                        <div class="menu-toggle">☰</div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="drop-menu active-nav-menu">
+                                <a href="index.html" class="nav-a-menu">Home</a>
+                                <div class="nav-menu">
+                                    <div class="nav-menu-item">
+                                        <h1>Performance Analysis</h1>
+                                        <ol>
+                                            <li><a href="#portfolio analysis">Portfolio Analysis</a></li>
+                                            <li><a href="#Portfolio Performance">Portfolio Performance</a></li>
+                                            <li><a href="#Stock Comparison">Stock Comparison</a></li>
+                                            <li><a href="#Sharpe Ratio">Sharpe Ratio</a></li>
+                                            <li><a href="#Martin Ratio">Martin Ratio</a></li>
+                                            <li><a href="#Treynor Ratio">Treynor Ratio</a></li>
+                                            <li><a href="#Sortino Ratio">Sortino Ratio</a></li>
+                                            <li><a href="#Omega Ratio">Omega Ratio</a></li>
+                                            <li><a href="#Calmar Ratio">Calmar Ratio</a></li>
+                                            <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="nav-menu-item">
+                                        <h1>Risk Analysis</h1>
+                                        <ol>
+                                            <li><a href="#Drawdowns">Drawdowns</a></li>
+                                            <li><a href="#Expected Shortfall">Expected Shortfall</a></li>
+                                            <li><a href="#Ulcer Index">Ulcer Index</a></li>
+                                            <li><a href="#Value at Risk">Value at Risk</a></li>
+                                            <li><a href="#Close-to-Close Volatility">Close-to-Close Volatility</a></li>
+                                            <li><a href="#Parkinson Volatility">Parkinson Volatility</a></li>
+                                            <li><a href="#Garman Klass Volatility">Garman Klass Volatility</a></li>
+                                            <li><a href="#Rogers-Satchell Volatility">Rogers-Satchell Volatility</a></li>
+                                            <li><a href="#Yang Zhang Volatility">Yang Zhang Volatility</a></li>
+                                            <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="nav-menu-item">
+                                        <h1>Optimization</h1>
+                                        <ol>
+                                            <li><a href="#Asset Correlations">Asset Correlations</a></li>
+                                            <li><a href="#Portfolio Optimization">Portfolio Optimization</a></li>
+                                            <li><a href="#Risk Parity Optimization">Risk Parity Optimization</a></li>
+                                            <li><a href="#Hierarchical Risk Parity">Hierarchical Risk Parity (HRP) Optimization</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="nav-menu-item">
+                                        <h1>Factor Model</h1>
+                                        <ol>
+                                            <li><a href="#Alpha">Alpha</a></li>
+                                            <li><a href="#Beta">Beta</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="drop-menu">
+                                <a href="stock.html" class="nav-a-menu">Stocks</a>
+                                <div class="nav-menu">
+                                    <div class="nav-menu-item">
+                                        <ol>
+                                            <li><a href="#portfolio analysis">Lazy Portfolios</a></li>
+                                            <li><a href="#Portfolio Performance">User Portfolios</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </li>
+                            <li  class="drop-menu">
+                                <a href="#etfs" class="nav-a-menu">ETFs</a>
+                                <div class="nav-menu">
+                                    <div class="nav-menu-item">
+                                        <ol>
+                                            <li><a href="#ETF Screener">ETF Screener</a></li>
+                                            <li><a href="#Portfolio Performance">Fund Screener</a></li>
+                                            <li><a href="#Stock Screener">Stock Screener</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#funds" class="nav-a-menu" >Funds</a>
+                            </li>
+                            <li> 
+                                <a href="#insider-action" class="nav-a-menu">Insider action</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-a-menu">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="form-container">
+                        <form>
+                            <img src="search.svg" alt="search">
+                            <input type="text" placeholder="Search Stocks, Bonds, ETFs...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+               <div class="container">
+                    <div class="main-hero">
+                        <h1>Your Free Source for Investment Screening Tools</h1>
+                        <p>Optimize your portfolio with our <span>free stock</span>, ETF, bond, and fund screeners.</p>
+                        <form>
+                            <input type="text" placeholder="Search Stocks, Bonds, ETFs...">
+                            <img src="search.svg" alt="search">
+                        </form>
+                        <div class="apl-status">
+                            <ul>
+                                <li>AAPL SPOT</li>
+                                <li>$2,155.59</li>
+                            </ul>
+                            <ul>
+                                <li><img src="green-line.svg" alt="line"></li>
+                            </ul>
+                            <ul>
+                                <li>AAPL SPOT 24h Change</li>
+                                <li><span>+2.67% (+$56.13)</span></li>
+                            </ul>
+                            <ul>
+                                <li>24h volume</li>
+                                <li>$3,702,454</li>
+                            </ul>
+                            <ul>
+                                <li>oi</li>
+                                <li>$66,888,705</li>
+                            </ul>
+                            <ul>
+                                <li>calls oi</li>
+                                <li>$28,034,526.68</li>
+                            </ul>
+                            <ul>
+                                <li>puts oi</li>
+                                <li>$38,854,079.93</li>
+                            </ul>
+                        </div>
+                        <div class="hero-price-main">
+                            <div class="border-gridiant">
+                                <div class="price-updates">
+                                    <div class="price-update-header">
+                                        <div>
+                                            <h1>Price Updates</h1>
+                                            <p>We are excited to announce...</p>
+                                        </div>
+                                        <a href="#viewprofile">View Portfolio</a>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>CAMPAIGN</th>
+                                                <th>SESSIONS</th>
+                                                <th>CONVERSION RATE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="dashed">Google</td>
+                                                <td>1,256<span class="red-bg">-935</span></td>
+                                                <td>23.63%<span class="red-bg">-9.35%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Facebook</td>
+                                                <td>446<span class="red-bg">-576</span></td>
+                                                <td>12.45%<span class="red-bg">-57.02%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bol.com</td>
+                                                <td>67<span class="blue-bg">+24</span></td>
+                                                <td>73.63%<span class="blue-bg">+28.73%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dutchnews.nl</td>
+                                                <td>2,136<span class="red-bg">-1,229</span></td>
+                                                <td>3.67%<span class="red-bg">-12.29%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stackoverflow</td>
+                                                <td>945<span class="red-bg">-634</span></td>
+                                                <td>25.03%<span class="red-bg">-9.35%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Themeforest</td>
+                                                <td>237<span class="blue-bg">106</span></td>
+                                                <td>36.52%<span class="blue-bg">+3.06%</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <img src="Chart1.svg" alt="chart">
+                        </div>
+                    </div>
+               </div> 
+        </section>
+    </div>
+    <div class="white-circle">
+     <section>
+        <div class="container">
+            <div class="free-tools">
+                <h3>Maximize Your Portfolio with Free Screeners</h3>
+                <h1>Get ahead in the market with Tickspike’s free and accurate <br> screening tools.</h1>
+                <div class="tools-card-main">
+                    <div class="tool-card">
+                        <img src="search-tool.svg" alt="search">
+                        <h1>Free Stock Screener</h1>
+                        <p>Search for stocks with powerful filters and access detailed analytics, all without any subscription fees.</p>
+                        <a href="#start-now" class="free-stack">
+                            <img src="arrow-yellow.svg" alt="arrow">
+                            <span>Start Now</span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <img src="speed-tool.svg" alt="search">
+                        <h1>Free ETF Screener</h1>
+                        <p>Discover top ETFs based on sectors, 
+                            performance, and more—completely 
+                            free of charge.</p>
+                        <a href="#screen-efts" class="etfss">
+                            <img src="arrow-blue.svg" alt="arrow">
+                            <span>Screen ETFs</span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <img src="scaner-tool.svg" alt="search">
+                        <h1>Free Fund Screener</h1>
+                        <p>Search funds based on risk, returns, 
+                            and more using our easy-to-use 
+                            screener.</p>
+                        <a href="#find-stocks" class="funds">
+                            <img src="arrow-green.svg" alt="arrow">
+                            <span>Find Funds</span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <img src="calculator-tool.svg" alt="search">
+                        <h1>Financial Tools and Calculators</h1>
+                        <p>Search funds based on risk, returns, 
+                            and more using our easy-to-use 
+                            screener.</p>
+                        <a href="#explore-all-tools" class="financial">
+                            <img src="arrow-lightyellow.svg" alt="arrow">
+                            <span>Explore all tools</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="investment">
+        <div class="container d-flex">
+            <div class="investment-hero">
+                <h2>Empower your investment</h2>
+                <h1>Unlock the full potential of your portfolio with free, data-driven tools.</h1>
+                <p>Explore stocks, ETFs, and funds with free access to real-time data,  predictive analysis, and comprehensive insights—no strings attached.</p>
+                <a href="#start-free">Start Free screening</a>
+            </div>
+        </div>
+        <div class="investment-bg">
+            <img class="invs-views" src="Views All.svg" alt="views">
+            <img class="invs-dash" src="Dashboard.svg" alt="Dashboard">
+            <img class="invs-stock" src="Stock-1.svg" alt="stock">
+        </div>
+     </section>
+     <section class="marquee-wrapper">
+        <div class="marquee-content">
+           <span class="mst"><strong>MSFT</strong>Microsoft Corp NASDAQ</span>
+           <div>
+                <img src="eye.svg" alt="eye">
+                <img src="bell.svg" alt="bell">
+           </div>
+           <ul>
+                <li>Open<span>408.36</span></li>
+                <li>High<span>408.36</span></li>
+                <li>Low<span>408.36</span></li>
+                <li>Close<span>408.36</span></li>
+                <li><span>+8.90</span><span>+2.14%</span></li>
+                <li>Vol<span>56,254,781</span></li>
+           </ul>
+           <h2>|</h2>
+           <span class="mst"><strong>SPDR</strong>S&P 500 ETF</span>
+           <div>
+            <img src="eye.svg" alt="eye">
+            <img src="bell.svg" alt="bell">
+        </div>
+           <span class="mst"><strong>MSFT</strong>Microsoft Corp NASDAQ</span>
+           <div>
+                <img src="eye.svg" alt="eye">
+                <img src="bell.svg" alt="bell">
+           </div>
+           <ul>
+                <li>Open<span>408.36</span></li>
+                <li>High<span>408.36</span></li>
+                <li>Low<span>408.36</span></li>
+                <li>Close<span>408.36</span></li>
+                <li><span>+8.90</span><span>+2.14%</span></li>
+                <li>Vol<span>56,254,781</span></li>
+           </ul>
+           <h2>|</h2>
+           <span class="mst"><strong>SPDR</strong>S&P 500 ETF</span>
+           <span class="mst"><strong>MSFT</strong>Microsoft Corp NASDAQ</span>
+           <div>
+                <img src="eye.svg" alt="eye">
+                <img src="bell.svg" alt="bell">
+           </div>
+           <ul>
+                <li>Open<span>408.36</span></li>
+                <li>High<span>408.36</span></li>
+                <li>Low<span>408.36</span></li>
+                <li>Close<span>408.36</span></li>
+                <li><span>+8.90</span><span>+2.14%</span></li>
+                <li>Vol<span>56,254,781</span></li>
+           </ul>
+           <h2>|</h2>
+           <span class="mst"><strong>SPDR</strong>S&P 500 ETF</span>
+            <div>
+                <img src="eye.svg" alt="eye">
+                <img src="bell.svg" alt="bell">
+           </div>
+        </div>
+     </section>
+      <section>
+            <div class="container">
+                <div class="empowering">
+                    <div class="empowering-head">
+                        <img src="logo.svg" alt="logo">
+                        <h1>Empowering Your Investment <br> Strategy for Free</h1>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Our platform offers a suite of free tools designed to optimize your  investment process, providing you with <br> the insights needed to make  informed decisions and achieve <br> 
+                            financial growth without any cost</p>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-container line-left">
+                          <div class="time-content">
+                           <p><span>Comprehensive Market Data:</span>Access in-depth data 
+                            across stocks, ETFs, funds, and bonds for free.</p>
+                          </div>
+                        </div>
+                        <div class="timeline-container line-right">
+                          <div class="time-content">
+                            <p><span>Advanced Screening Tools:</span>Utilize powerful screening criteria to discover stocks, ETFs, funds, and bonds at no cost.</p>
+                          </div>
+                        </div>
+                        <div class="timeline-container line-left">
+                          <div class="time-content">
+                            <p><span>Customized Analysis:</span>Tailor your analysis with filters and parameters that suit your investment goals, all without any</p>
+                          </div>
+                        </div>
+                        <div class="timeline-container line-right">
+                          <div class="time-content">
+                            <p><span>Predictive Insights:</span>Leverage free predictive analytics for future</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="time-map">
+                        <img src="map.svg" alt="map">
+                        <div class="map-card-main">
+                            <div class="map-card map-card1">
+                                <div>
+                                    <button>01.</button>
+                                    <h1>Comprehensive Data Collection</h1>
+                                </div>
+                                <p>Gathering extensive market data on stocks, ETFs, 
+                                    funds, and bonds to  power our free analytics and 
+                                    insights, ensuring accuracy and relevance.</p>
+                            </div>
+                            <div class="map-card map-card2">
+                                <div>
+                                    <button>02.</button>
+                                    <h1>In-depth Analysis</h1>
+                                </div>
+                                <p>Utilizing advanced  algorithms for detailed analysis 
+                                    of market trends and investments,  uncovering 
+                                    actionable insights—all free of charge.</p>
+                            </div>
+                            <div class="map-card map-card3">
+                                <div>
+                                    <button>03.</button>
+                                    <h1>Strategic Insights</h1>
+                                </div>
+                                <p>Providing tailored investment strategies and 
+                                    opportunities for stocks,  ETFs, funds, and bonds, 
+                                    helping you make well-informed decisions without 
+                                    any subscription costs</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+      </section>
+    </div>
+    <section class="white-circle2">
+        <div class="container chose-container">
+            <div class="why-choose">
+                <div class="why-choose-left">
+                    <h2>Why Choose Us?</h2>
+                    <h1>Leading the way in <span>free investment 
+                        analytics</span> and insights.</h1>
+                    <ul>
+                        <li>
+                            <img src="word-icon.svg" alt="word">
+                            Cutting-Edge Technology
+                        </li>
+                        <li>
+                            <img src="word-icon.svg" alt="word">
+                            Unparalleled Accuracy
+                        </li>
+                        <li>
+                            <img src="word-icon.svg" alt="word">
+                            Personalized Insight
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-choose-right">
+                    <img src="why-choose.svg" alt="user">
+                    <img class="adobe" src="adobe.svg" alt="adobe">
+                    <img class="amazon" src="amazon.svg" alt="amazon">
+                </div>
+            </div>
+        </div>
+        <div class="discover-sec">
+            <h1>Discover investment opportunities with our free stock, ETF, fund, 
+                and bond screeners. Join 5000+ investors making data-driven decisions.</h1>
+            <div class="discover-btn">
+               <a href="#explore-stocks">Explore Stocks</a>
+                <a href="#discover-efts">Discover ETFs</a>
+                <a href="#fins-founds">Find funds</a>
+                <a href="#screen-bonds">Screen Bonds</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ft-container">
+           <div class="footer-main">
+                <div class="footer-social">
+                    <img src="logo.svg" alt="logo">
+                    <p>Let us unleash our creativity and expertise to create designs that deliver extraordinary results.</p>
+                    <div>
+                        <a href="#skype"><img src="skype.svg" alt="skype"></a>
+                        <a href="#whatsapp"><img src="whatsapp.svg" alt="whatsapp"></a>
+                        <a href="#ft"><img src="ft.svg" alt="ft"></a>
+                        <a href="#twiter"><img src="twiter.svg" alt="twiter"></a>
+                        <a href="#yt"><img src="yt.svg" alt="yt"></a>
+                        <a href="#telegram"><img src="telegram.svg" alt="telegram"></a>
+                        <a href="#insta"><img src="insta.svg" alt="insta"></a>
+                    </div>
+                    <p class="copy-right">© 2023 Tickspike. All rights reserved.</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <h1>Get in Touch</h1>
+                        <li><p>954, Prosacco Pine, 947 Weber Wells Suite 755, Iowa, West Dallin, Post Code : 95284-5922</p></li>
+                        <li>contact@tickspike.com</li>
+                        <li>+1 215-501-4450</li>
+                    </ul>
+                    <ul>
+                        <h1>Learn More</h1>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="terms-of-use">Terms of Use</a></li>
+                        <li><a href="risk-disclosure">Risk Disclosure</a></li>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Quick Links</h1>
+                        <li><a href="#indices">Indices</a></li>
+                        <li><a href="#nifty-50">NIFTY 50</a></li>
+                        <li><a href="#nifty-bank">NIFTY Bank</a></li>
+                        <li><a href="#gift-nifty">GIFT NIFTY</a></li>
+                    </ul>
+                </div>
+           </div> 
+        </div>
+    </footer>
+    <script src="index.js"></script>
+   
+</body>
+</html>

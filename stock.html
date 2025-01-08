@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickspike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stock.css">
+    <link rel="stylesheet" href="news.css">
+   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="stock-page">
+    <header class="dark-header">
+        <div class="header-container">
+            <div class="header-main">
+                <a href="index.html" class="nav-a-menu">
+                    <img src="logo.svg" alt="logo">
+                </a>
+                <div class="res-toggle-btn">
+                    <img src="light-search.svg" class="form-btn" alt="light">
+                    <div class="menu-toggle">☰</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="drop-menu">
+                            <a href="index.html" class="nav-a-menu">Home</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <h1>Performance Analysis</h1>
+                                    <ol>
+                                        <li><a href="#portfolio analysis">Portfolio Analysis</a></li>
+                                        <li><a href="#Portfolio Performance">Portfolio Performance</a></li>
+                                        <li><a href="#Stock Comparison">Stock Comparison</a></li>
+                                        <li><a href="#Sharpe Ratio">Sharpe Ratio</a></li>
+                                        <li><a href="#Martin Ratio">Martin Ratio</a></li>
+                                        <li><a href="#theynor Ratio">Treynor Ratio</a></li>
+                                        <li><a href="#Sortino Ratio">Sortino Ratio</a></li>
+                                        <li><a href="#Omega Ratio">Omega Ratio</a></li>
+                                        <li><a href="#Calmar Ratio">Calmar Ratio</a></li>
+                                        <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Risk Analysis</h1>
+                                    <ol>
+                                        <li><a href="#Drawdowns">Drawdowns</a></li>
+                                        <li><a href="#Expected Shortfall">Expected Shortfall</a></li>
+                                        <li><a href="#Ulcer Index">Ulcer Index</a></li>
+                                        <li><a href="#Value at Risk">Value at Risk</a></li>
+                                        <li><a href="#Close-to-Close Volatility">Close-to-Close Volatility</a></li>
+                                        <li><a href="#Parkinson Volatility">Parkinson Volatility</a></li>
+                                        <li><a href="#Garman Klass Volatility">Garman Klass Volatility</a></li>
+                                        <li><a href="#Rogers-Satchell Volatility">Rogers-Satchell Volatility</a></li>
+                                        <li><a href="#Yang Zhang Volatility">Yang Zhang Volatility</a></li>
+                                        <li><a href="#Summers Ratio">Summers Ratio</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Optimization</h1>
+                                    <ol>
+                                        <li><a href="#Asset Correlations">Asset Correlations</a></li>
+                                        <li><a href="#Portfolio Optimization">Portfolio Optimization</a></li>
+                                        <li><a href="#Risk Parity Optimization">Risk Parity Optimization</a></li>
+                                        <li><a href="#Hierarchical Risk Parity">Hierarchical Risk Parity (HRP) Optimization</a></li>
+                                    </ol>
+                                </div>
+                                <div class="nav-menu-item">
+                                    <h1>Factor Model</h1>
+                                    <ol>
+                                        <li><a href="#Alpha">Alpha</a></li>
+                                        <li><a href="#Beta">Beta</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-menu active-nav-menu">
+                            <a href="stock.html" class="nav-a-menu">Stocks</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <ol>
+                                        <li><a href="#portfolio analysis">Lazy Portfolios</a></li>
+                                        <li><a href="#Portfolio Performance">User Portfolios</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li  class="drop-menu">
+                            <a href="#etfs" class="nav-a-menu">ETFs</a>
+                            <div class="nav-menu">
+                                <div class="nav-menu-item">
+                                    <ol>
+                                        <li><a href="#ETF Screener">ETF Screener</a></li>
+                                        <li><a href="#Portfolio Performance">Fund Screener</a></li>
+                                        <li><a href="#Stock Screener">Stock Screener</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#funds" class="nav-a-menu" >Funds</a>
+                        </li>
+                        <li> 
+                            <a href="#insider-action" class="nav-a-menu">Insider action</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-a-menu">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="form-container">
+                    <form>
+                        <img src="search.svg" alt="search">
+                        <input type="text" placeholder="Search Stocks, Bonds, ETFs...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="stock">
+        <div class="container">
+            <p>Analyze stocks <span>for free with  TickSpike's advanced stock screener.</span> Use our comprehensive filters to find equities that match your investment criteria. <a href="#">No subscription required.</a></p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="stock-table">
+                <div class="stock-table-header">
+                    <h1>Stock Screener<img src="bold-arrow.svg" alt="arrow"></h1>
+                    <div>
+                        <form>
+                            <img src="search.svg" alt="search">
+                            <input type="text" placeholder="Search shares by code or name...">
+                        </form>
+                        <h1>Edit Columns<img src="setting.svg" alt="setting"></h1>
+                    </div>
+                </div>  
+                <div class="stock-filter">
+                    <div class="lists1">
+                        <h1><img src="thin-down.svg" alt="arrow">Watchlist</h1>
+                        <h1><img src="thin-down.svg" alt="arrow">Sector</h1>
+                        <h1><img src="thin-down.svg" alt="arrow">Market</h1>
+                        <h1><img src="thin-down.svg" alt="arrow">Industry</h1>
+                        <h1><img src="thin-down.svg" alt="arrow">IPO Date</h1>
+                        <h1><img src="thin-down.svg" alt="arrow">Currency</h1>
+                    </div>
+                    <div class="lists2">
+                        <h1><img src="filter.svg" alt="arrow">Currency</h1>
+                    </div>
+                </div>
+                <div class="stock-table-main">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Code <img src="thin-up.svg" alt="arrow"></th>
+                                <th>Full name</th>
+                                <th>Sector</th>
+                                <th>Industhy</th>
+                                <th>Market Cap</th>
+                                <th>Revenue</th>
+                                <th>Dividend Yeild</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">A</td>
+                                <td><a href="overview.html">Agilent Technologies Inc</a></td>
+                                <td>Healthcare</td>
+                                <td>Diagnostics & Research</td>
+                                <td>$41.65 B</td>
+                                <td>$6.50B</td>
+                                <td>6.16%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AA</td>
+                                <td><a href="overview.html">Alcoa Corp</a></td>
+                                <td>BASIC materials</td>
+                                <td>Aluminium</td>
+                                <td>$10.11B</td>
+                                <td>$10.70B</td>
+                                <td>4.70%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AAALY</td>
+                                <td><a href="overview.html">Aareal Bank AG ADR</a></td>
+                                <td>Financial services</td>
+                                <td>Banks - Regional</td>
+                                <td>$2.19B</td>
+                                <td>$847.00M</td>
+                                <td>2.18%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AABB</td>
+                                <td><a href="overview.html">Aberdeen International Inc</a></td>
+                                <td>Financial Services</td>
+                                <td>Asset Management</td>
+                                <td>$3.60 M</td>
+                                <td>$50503.0</td>
+                                <td>9.12%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACAF</td>
+                                <td><a href="overview.html">AAC Technologies Holdings Inc</a></td>
+                                <td>Technology</td>
+                                <td>Communication Equipment</td>
+                                <td>$5.04 B</td>
+                                <td>$-8.90M</td>
+                                <td>0.00%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACAY</td>
+                                <td><a href="overview.html">AAC Technologies Holdings Inc</a></td>
+                                <td>Technology</td>
+                                <td>Communication Equipment</td>
+                                <td>$5.04 B</td>
+                                <td>$22.45B</td>
+                                <td>5.12%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACAY</td>
+                                <td><a href="overview.html">AAC Technologies Holdings Inc</a></td>
+                                <td>Technology</td>
+                                <td>Communication Equipment</td>
+                                <td>$4.87B</td>
+                                <td>$22.45B</td>
+                                <td>15.12%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACG</td>
+                                <td><a href="overview.html">ATA Creativity Global</a></td>
+                                <td>Consumer Defensive</td>
+                                <td>Education & Training Services</td>
+                                <td>$27.32 M</td>
+                                <td>$242.95M</td>
+                                <td>9.07%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACI</td>
+                                <td><a href="overview.html">Armada Acquisition Corp I</a></td>
+                                <td>Financial Services</td>
+                                <td>Shell Companies</td>
+                                <td>$81.68 M</td>
+                                <td>$0.0</td>
+                                <td>0.0%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACIW</td>
+                                <td><a href="overview.html">Armada Acquisition Corp. I Warrant</a></td>
+                                <td>Financial Services</td>
+                                <td>Shell Companies</td>
+                                <td>$0.0</td>
+                                <td>$0.0</td>
+                                <td>0.0%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACS</td>
+                                <td><a href="overview.html">American Commerce Solutions Inc</a></td>
+                                <td>Industrials</td>
+                                <td>Specialty Industrial Machinery</td>
+                                <td>$2.57 M</td>
+                                <td>$2.05M</td>
+                                <td>0.0%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACS</td>
+                                <td><a href="overview.html">American Commerce Solutions Inc</a></td>
+                                <td>Industrials</td>
+                                <td>Specialty Industrial Machinery</td>
+                                <td>$2.57 M</td>
+                                <td>$2.05M</td>
+                                <td>2.88%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACT</td>
+                                <td><a href="overview.html">Ares Acquisition Corporation II</a></td>
+                                <td>Financial Services</td>
+                                <td>Shell Companies</td>
+                                <td>$677.19 M</td>
+                                <td>$0.0</td>
+                                <td>0.0%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACT - WT</td>
+                                <td><a href="overview.html">Ares Acquisition Corporation II WT</a></td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>$0.0</td>
+                                <td>$0.0</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACTF</td>
+                                <td><a href="overview.html">Aurora Solar Technologies Inc</a></td>
+                                <td>Technology</td>
+                                <td>Solar</td>
+                                <td>$5.33 M</td>
+                                <td>$10.90M</td>
+                                <td>$0.0%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AADI</td>
+                                <td><a href="overview.html">Aadi Bioscience Inc</a></td>
+                                <td>Healthcare</td>
+                                <td>Biotechnology</td>
+                                <td>$47.75 M</td>
+                                <td>$23.82M</td>
+                                <td>9.31%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AAGC</td>
+                                <td><a href="overview.html">All American Gld Crp</a></td>
+                                <td>Consumer Cyclical</td>
+                                <td>Leisure</td>
+                                <td>$1.49 M</td>
+                                <td>$23.82M</td>
+                                <td>9.31%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AACG</td>
+                                <td><a href="overview.html">ATA Creativity Global</a></td>
+                                <td>Consumer Defensive</td>
+                                <td>Education & Training Services</td>
+                                <td>$27.32 M</td>
+                                <td>$242.95M</td>
+                                <td>9.07%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AAALY</td>
+                                <td><a href="overview.html">Aareal Bank AG ADR</a></td>
+                                <td>Financial services</td>
+                                <td>Banks - Regional</td>
+                                <td>$2.19B</td>
+                                <td>$847.00M</td>
+                                <td>2.18%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="light-star.svg" alt="star">AAGRW</td>
+                                <td><a href="overview.html">African Agriculture Holdings Inc</a></td>
+                                <td>Consumer Defensive</td>
+                                <td>Farm Products</td>
+                                <td>$2.19B</td>
+                                <td>$847.00M</td>
+                                <td>2.18%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             
+                <div class="news-lessthan">
+                    <div class="lessthan-heading">
+                        <h2><span>1 - 10</span>  of  <span>13</span></h2>
+                    </div>
+                    <div class="lessthan-image">
+                        <img src="Vector3.svg" alt="">
+                        <img src="Vector2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ft-container">
+           <div class="footer-main">
+                <div class="footer-social">
+                    <img src="logo.svg" alt="logo">
+                    <p>Let us unleash our creativity and expertise to create designs that deliver extraordinary results.</p>
+                    <div>
+                        <a href="#skype"><img src="skype.svg" alt="skype"></a>
+                        <a href="#whatsapp"><img src="whatsapp.svg" alt="whatsapp"></a>
+                        <a href="#ft"><img src="ft.svg" alt="ft"></a>
+                        <a href="#twiter"><img src="twiter.svg" alt="twiter"></a>
+                        <a href="#yt"><img src="yt.svg" alt="yt"></a>
+                        <a href="#telegram"><img src="telegram.svg" alt="telegram"></a>
+                        <a href="#insta"><img src="insta.svg" alt="insta"></a>
+                    </div>
+                    <p class="copy-right">© 2023 Tickspike. All rights reserved.</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <h1>Get in Touch</h1>
+                        <li><p>954, Prosacco Pine, 947 Weber Wells Suite 755, Iowa, West Dallin, Post Code : 95284-5922</p></li>
+                        <li>contact@tickspike.com</li>
+                        <li>+1 215-501-4450</li>
+                    </ul>
+                    <ul>
+                        <h1>Learn More</h1>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="terms-of-use">Terms of Use</a></li>
+                        <li><a href="risk-disclosure">Risk Disclosure</a></li>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <h1>Quick Links</h1>
+                        <li><a href="#indices">Indices</a></li>
+                        <li><a href="#nifty-50">NIFTY 50</a></li>
+                        <li><a href="#nifty-bank">NIFTY Bank</a></li>
+                        <li><a href="#gift-nifty">GIFT NIFTY</a></li>
+                    </ul>
+                </div>
+           </div> 
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
